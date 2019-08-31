@@ -48,5 +48,6 @@ We need an agreement that serves both the maintainers and the consumers of packa
 agreements may cover [financial commitments](https://blog.npmjs.org/post/187382017885/supporting-open-source-maintainers)
 or may be a commitment to follow the guidelines presented by the [package maintenance team](https://github.com/nodejs/package-maintenance).
 
-The package maintenance team is offering a mechanism
+The package maintenance team is offering a place for maintainers that provides guidelines and assistance
+for the maintenance of their package.
 
