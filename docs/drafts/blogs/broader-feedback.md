@@ -37,6 +37,23 @@ baseline expectations about the package.
 - Support json in package.json or not
 - external reference or within package
 
+## Case Study
+
+The package maintenance team has been looking at suitable candidates for first case study. We have been engaging the
+[express](https://github.com/expressjs/express) team. The [express](https://www.npmjs.com/package/express) package is a widely
+used package for both APIs and hosting. When the package maintenance team look at package it is not just the top of the
+tree that concerns us. It is all of the dependencies that are depended upon that make up the entire collection of 
+packages that go into making that one package work. For express there are many dependencies. If any of these dependencies
+are in jeopardy then maybe so is the main package. 
+
+It is understood that mature packages can be difficult for a newcomer to enter into. The package maintenance team have
+been in discussion with the express team to see how newcomers can assist without being overwhelmed or causing unintentional
+harm.
+
+There are ways that help can be given without jumping straight into complex problems. There has been a request to help 
+**triage** new incoming issues. Often what the maintainers need is help with the ofter **less glamorous** work so that 
+they can be freed to work on tricky bugs.
+
 
 ## Call to action
 Within the community as a whole we have now recognized that the package ecosystem has 
@@ -49,5 +66,23 @@ agreements may cover [financial commitments](https://blog.npmjs.org/post/1873820
 or may be a commitment to follow the guidelines presented by the [package maintenance team](https://github.com/nodejs/package-maintenance).
 
 The package maintenance team is offering a place for maintainers that provides guidelines and assistance
-for the maintenance of their package.
+for the maintenance of their package. It is also a place for consumers who wish to support widely used 
+packages that need some help a bit of support. 
 
+We would welcome feedback from developers who wish to offer support and from package maintainers who wish 
+to get some assistance with their packages. 
+
+Please give us feedback at 
+
+- name@address.com
+- github.com/nodejs/package-maintenance/...
+
+Please tell us if you are interested in 
+
+- general enquiries
+- licensing 
+- support levels
+- dependencies upon unmaintained but critical packages
+- wish to notify us of important ghosted packages
+- joining the package maintenance team
+- 
