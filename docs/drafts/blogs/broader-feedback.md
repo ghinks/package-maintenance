@@ -31,3 +31,22 @@ The package maintenance team seeks to provide clear guidelines for the level of 
 to receive from its maintainers. The team are offering guidance upon licensing and funding so that consumers can have 
 baseline expectations about the package. 
 
+## Ongoing Discussions
+
+- Support file format JSON or MD ?
+- Support json in package.json or not
+- external reference or within package
+
+
+## Call to action
+Within the community as a whole we have now recognized that the package ecosystem has 
+reached a level of maturity that requires guidelines. Whether a maintainer can no longer 
+commit to support an essential package or if the maintainers can no longer commit to 
+supporting older versions or engines for a package. 
+
+We need an agreement that serves both the maintainers and the consumers of packages. The
+agreements may cover [financial commitments](https://blog.npmjs.org/post/187382017885/supporting-open-source-maintainers)
+or may be a commitment to follow the guidelines presented by the [package maintenance team](https://github.com/nodejs/package-maintenance).
+
+The package maintenance team is offering a mechanism
+
