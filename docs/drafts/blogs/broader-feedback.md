@@ -37,7 +37,7 @@ baseline expectations about the package.
 - Support json in package.json or not
 - external reference or within package
 
-** the overview of key elements goes into this section and i need a bit of help on this one, with target and response **
+**the overview of key elements goes into this section and i need a bit of help on this one, with target and response**
 
 ## Case Study
 
