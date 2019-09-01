@@ -37,11 +37,13 @@ baseline expectations about the package.
 - Support json in package.json or not
 - external reference or within package
 
+** the overview of key elements goes into this section and i need a bit of help on this one, with target and response **
+
 ## Case Study
 
 The package maintenance team has been looking at suitable candidates for first case study. We have been engaging the
 [express](https://github.com/expressjs/express) team. The [express](https://www.npmjs.com/package/express) package is a widely
-used package for both APIs and hosting. When the package maintenance team look at package it is not just the top of the
+used package for both APIs and static hosting. When the package maintenance team look at package it is not just the top of the
 tree that concerns us. It is all of the dependencies that are depended upon that make up the entire collection of 
 packages that go into making that one package work. For express there are many dependencies. If any of these dependencies
 are in jeopardy then maybe so is the main package. 
@@ -53,6 +55,10 @@ harm.
 There are ways that help can be given without jumping straight into complex problems. There has been a request to help 
 **triage** new incoming issues. Often what the maintainers need is help with the ofter **less glamorous** work so that 
 they can be freed to work on tricky bugs.
+
+This can simply be responding to issues and making sure that they can be reproduced. That a suitable example of the issue
+is pushed to a repository so that it may be reproduced. In this first case study the package maintenance team is learning
+too and we will be morphing as we learn.
 
 
 ## Call to action
@@ -85,4 +91,4 @@ Please tell us if you are interested in
 - dependencies upon unmaintained but critical packages
 - wish to notify us of important ghosted packages
 - joining the package maintenance team
-- 
+- ideas for the package maintenance team
