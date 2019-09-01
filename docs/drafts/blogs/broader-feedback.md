@@ -37,6 +37,26 @@ baseline expectations about the package.
 - Support json in package.json or not
 - external reference or within package
 
+## Contentious Issues
+
+With all discussions there will be areas of contention the following is a discussion of some of the thornier issues that have been discussed and resolved by the package maintenance group.
+
+### Package Size
+There are 2 schools of thought about what should go into a package the **minimalist** which basically is only the code which is run when using the package and the **all inclusive** school of thought which prefers to ship everything that could be useful in the package.
+
+```
+Note: Glenn Hinks 20190901
+the names minimalist and all inclusive can be changed but 
+we have to decide what to call the 2 schools
+```
+
+With these two schools there is not much of overlap. So the package maintenance team accepts both with the following reasoning.
+
+|  school of thought | description | reasoning |
+|----------------|----------------|-----|
+| minimalist | It has been a practice not to include source code that is not run. Things such as tests or with transpiled code only the distribution folder containing the result of the transpilation is included. | The package size should be as small as possible and installation time fast. 
+| all inclusive | All source code, tests and configuration files should be included in the package. | Github repositories are not imutable whereas packages are. If everything that is in the repository is in the package offline debugging is possible. Future tooling such as **Tink** ( to be confirmed with a conversation with them) will make it possible to install selected parts of the package. |
+
 **the overview of key elements goes into this section and i need a bit of help on this one, with target and response**
 
 ## Case Study
