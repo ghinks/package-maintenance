@@ -1,7 +1,7 @@
 # Broader Feedback Blog Post
 
 ## Background
-It is widely accepted that the Javascript community now has a sustainability issue. The number of package
+It is widely accepted that the JavaScript community now has a sustainability issue. The number of package
 dependencies within the ecosystem is large. Many important packages are struggling with support issues. It 
 is recognized that events in the live's of many maintainers can lead to important packages going without 
 the necessary support they need.
@@ -55,21 +55,21 @@ With these two schools there is not much of overlap. So the package maintenance 
 |  school of thought | description | reasoning |
 |----------------|----------------|-----|
 | minimalist | It has been a practice not to include source code that is not run. Things such as tests or with transpiled code only the distribution folder containing the result of the transpilation is included. | The package size should be as small as possible and installation time fast. 
-| all inclusive | All source code, tests and configuration files should be included in the package. | Github repositories are not imutable whereas packages are. If everything that is in the repository is in the package offline debugging is possible. Future tooling such as **Tink** ( to be confirmed with a conversation with them) will make it possible to install selected parts of the package. |
+| all inclusive | All source code, tests and configuration files should be included in the package. | Github repositories are not immutable whereas packages are. If everything that is in the repository is in the package offline debugging is possible. Future tooling such as **Tink** ( to be confirmed with a conversation with them) will make it possible to install selected parts of the package. |
 
 **the overview of key elements goes into this section and i need a bit of help on this one, with target and response**
 
 ## Case Study
 
 The package maintenance team has been looking at suitable candidates for first case study. We have been engaging the
-[express](https://github.com/expressjs/express) team. The [express](https://www.npmjs.com/package/express) package is a widely
+[ExpressJS](https://github.com/expressjs/express) team. The [ExpressJS](https://www.npmjs.com/package/express) package is a widely
 used package for both APIs and static hosting. When the package maintenance team look at package it is not just the top of the
 tree that concerns us. It is all of the dependencies that are depended upon that make up the entire collection of 
-packages that go into making that one package work. For express there are many dependencies. If any of these dependencies
+packages that go into making that one package work. For ExpressJS there are many dependencies. If any of these dependencies
 are in jeopardy then maybe so is the main package. 
 
 It is understood that mature packages can be difficult for a newcomer to enter into. The package maintenance team have
-been in discussion with the express team to see how newcomers can assist without being overwhelmed or causing unintentional
+been in discussion with the ExpressJS team to see how newcomers can assist without being overwhelmed or causing unintentional
 harm.
 
 There are ways that help can be given without jumping straight into complex problems. There has been a request to help 
@@ -89,7 +89,7 @@ supporting older versions or engines for a package.
 
 We need an agreement that serves both the maintainers and the consumers of packages. The
 agreements may cover [financial commitments](https://blog.npmjs.org/post/187382017885/supporting-open-source-maintainers)
-or may be a commitment to follow the guidelines presented by the [package maintenance team](https://github.com/nodejs/package-maintenance).
+or may be a commitment to follow the guidelines presented by the [Package Maintenance WG](https://github.com/nodejs/package-maintenance).
 
 The package maintenance team is offering a place for maintainers that provides guidelines and assistance
 for the maintenance of their package. It is also a place for consumers who wish to support widely used 
