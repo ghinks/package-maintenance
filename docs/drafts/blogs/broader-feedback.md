@@ -6,7 +6,9 @@ dependencies within the ecosystem is large. Many important packages are struggli
 is recognized that events in the live's of many maintainers can lead to important packages going without 
 the necessary support they need.
 
-The [package maintenance team](https://github.com/nodejs/package-maintenance) has been formed to address these issues. The team meet bi-weekly as one of the many Node.js committees with meetings recorded on [you tube](https://www.youtube.com/playlist?list=PLfMzBWSH11xYuROYr6Z9TpS0Wb9lRIldn). 
+The [package maintenance team](https://github.com/nodejs/package-maintenance) has been formed to address these issues. 
+The team meet bi-weekly as one of the many Node.js committees with meetings recorded on 
+[you tube](https://www.youtube.com/playlist?list=PLfMzBWSH11xYuROYr6Z9TpS0Wb9lRIldn). 
 The committee falls under the supervision of the [OpenJS Foundation](https://openjsf.org/).
 
 This group seeks to provide a framework to offer support to key packages within the ecosystem that may need
@@ -37,12 +39,51 @@ baseline expectations about the package.
 - Support json in package.json or not
 - external reference or within package
 
+## Overview of Key Elements
+Overview of key elements
+
+The new support level information that we are recommending has 3 main dimensions:
+
+* target: the platform versions that the package maintainer aims to support. 
+* response: how quickly the maintainer chooses to, or is able to, respond to issues and
+   contacts for that level of support
+* backing: how the project is supported
+
+The goal is to allow the package maintainers to clarify what versions  they plan to support, how quickly a consumer can 
+expect to get help and both the existing support for the packages as well as ways that consumers can support the package.
+
+The `target` field which covers which versions the package maintainers plan to support is not just the currently supported 
+versions, but the model that can be used to predict which versions will be supported in the future.  In the context of 
+Node.js, for example, `lts` would indicate that any given time the package maintainers intend to support the current LTS 
+version of Node.js and that consumers won't be forced to update their Node.js version in order to get essential fixes.
+
+The `response` field allows the package maintainer to communicate the levels of support that are available (or not), as 
+well as contact information for being able to get or pay for that support.
+
+The `backing` field allows the package maintainer to communicate the outside support/funding that the package is currently 
+receiving, as well as the channels through which consumers can support the package.  
+
+These fields allow package maintainer to clearly set expectations with consumers, reducing the friction/stress/self-imposed 
+guilt when consumers make and express expectations that don't match those of the package maintainer.
+
+For the consumer, these fields allow consumers to:
+* better understand which versions of Node.js may be supported in the future
+* the risk associated with packages that they consume
+* understand how/if they can get help if they have problems
+* options/channels for helping both reduce their own risk as well as how to be a `good consumer` by 
+  helping to support packages which are important to them.
+
+
+
 ## Contentious Issues
 
-With all discussions there will be areas of contention the following is a discussion of some of the thornier issues that have been discussed and resolved by the package maintenance group.
+With all discussions there will be areas of contention the following is a discussion of some of the thornier issues that 
+have been discussed and resolved by the package maintenance group.
 
 ### Package Size
-There are 2 schools of thought about what should go into a package the **minimalist** which basically is only the code which is run when using the package and the **all inclusive** school of thought which prefers to ship everything that could be useful in the package.
+There are 2 schools of thought about what should go into a package the **minimalist** which basically is only the code 
+which is run when using the package and the **all inclusive** school of thought which prefers to ship everything that could 
+be useful in the package.
 
 ```
 Note: Glenn Hinks 20190901
@@ -52,12 +93,15 @@ we have to decide what to call the 2 schools
 
 With these two schools there is not much of overlap. So the package maintenance team accepts both with the following reasoning.
 
-|  school of thought | description | reasoning |
-|----------------|----------------|-----|
-| minimalist | It has been a practice not to include source code that is not run. Things such as tests or with transpiled code only the distribution folder containing the result of the transpilation is included. | The package size should be as small as possible and installation time fast. 
-| all inclusive | All source code, tests and configuration files should be included in the package. | Github repositories are not imutable whereas packages are. If everything that is in the repository is in the package offline debugging is possible. Future tooling such as **Tink** ( to be confirmed with a conversation with them) will make it possible to install selected parts of the package. |
 
-**the overview of key elements goes into this section and i need a bit of help on this one, with target and response**
+#### Minimalist
+It has been a practice not to include source code that is not run. Things such as tests or with transpiled code only the 
+distribution folder containing the result of the transpilation is included. | The package size should be as small as possible 
+and installation time fast. 
+#### All inclusive
+All source code, tests and configuration files should be included in the package. | Github repositories are not imutable 
+whereas packages are. If everything that is in the repository is in the package offline debugging is possible. Future tooling 
+such as **Tink** ( to be confirmed with a conversation with them) will make it possible to install selected parts of the package. |
 
 ## Case Study
 
